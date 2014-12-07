@@ -14,6 +14,13 @@
 		98271AC81A33C1C400667B4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98271AC71A33C1C400667B4D /* Images.xcassets */; };
 		98271ACB1A33C1C400667B4D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98271AC91A33C1C400667B4D /* LaunchScreen.xib */; };
 		98271AD71A33C1C400667B4D /* CoinFliprTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98271AD61A33C1C400667B4D /* CoinFliprTests.swift */; };
+		98271AE71A33C1EA00667B4D /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98271AE61A33C1EA00667B4D /* WatchKit.framework */; };
+		98271AEC1A33C1EA00667B4D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98271AEB1A33C1EA00667B4D /* InterfaceController.swift */; };
+		98271AEE1A33C1EA00667B4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98271AED1A33C1EA00667B4D /* Images.xcassets */; };
+		98271AF21A33C1EA00667B4D /* CoinFlipr Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = 98271AF11A33C1EA00667B4D /* CoinFlipr Watch App.app */; };
+		98271AF91A33C1EA00667B4D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98271AF81A33C1EA00667B4D /* Interface.storyboard */; };
+		98271AFB1A33C1EA00667B4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98271AFA1A33C1EA00667B4D /* Images.xcassets */; };
+		98271AFE1A33C1EA00667B4D /* CoinFlipr WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 98271AE41A33C1EA00667B4D /* CoinFlipr WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +31,35 @@
 			remoteGlobalIDString = 98271AB71A33C1C400667B4D;
 			remoteInfo = CoinFlipr;
 		};
+		98271AF31A33C1EA00667B4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98271AB01A33C1C400667B4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98271AF01A33C1EA00667B4D;
+			remoteInfo = "CoinFlipr Watch App";
+		};
+		98271AFC1A33C1EA00667B4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98271AB01A33C1C400667B4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98271AE31A33C1EA00667B4D;
+			remoteInfo = "CoinFlipr WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		98271B051A33C1EA00667B4D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				98271AFE1A33C1EA00667B4D /* CoinFlipr WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		98271AB81A33C1C400667B4D /* CoinFlipr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinFlipr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +73,15 @@
 		98271AD01A33C1C400667B4D /* CoinFliprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinFliprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98271AD51A33C1C400667B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98271AD61A33C1C400667B4D /* CoinFliprTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFliprTests.swift; sourceTree = "<group>"; };
+		98271AE41A33C1EA00667B4D /* CoinFlipr WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CoinFlipr WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98271AE61A33C1EA00667B4D /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		98271AEA1A33C1EA00667B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98271AEB1A33C1EA00667B4D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		98271AED1A33C1EA00667B4D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		98271AF11A33C1EA00667B4D /* CoinFlipr Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoinFlipr Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98271AF71A33C1EA00667B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98271AF81A33C1EA00667B4D /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		98271AFA1A33C1EA00667B4D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +99,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98271AE11A33C1EA00667B4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98271AE71A33C1EA00667B4D /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +115,9 @@
 			children = (
 				98271ABA1A33C1C400667B4D /* CoinFlipr */,
 				98271AD31A33C1C400667B4D /* CoinFliprTests */,
+				98271AE81A33C1EA00667B4D /* CoinFlipr WatchKit Extension */,
+				98271AF51A33C1EA00667B4D /* CoinFlipr Watch App */,
+				98271AE51A33C1EA00667B4D /* Frameworks */,
 				98271AB91A33C1C400667B4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +127,8 @@
 			children = (
 				98271AB81A33C1C400667B4D /* CoinFlipr.app */,
 				98271AD01A33C1C400667B4D /* CoinFliprTests.xctest */,
+				98271AE41A33C1EA00667B4D /* CoinFlipr WatchKit Extension.appex */,
+				98271AF11A33C1EA00667B4D /* CoinFlipr Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +172,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		98271AE51A33C1EA00667B4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98271AE61A33C1EA00667B4D /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98271AE81A33C1EA00667B4D /* CoinFlipr WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				98271AEB1A33C1EA00667B4D /* InterfaceController.swift */,
+				98271AED1A33C1EA00667B4D /* Images.xcassets */,
+				98271AE91A33C1EA00667B4D /* Supporting Files */,
+			);
+			path = "CoinFlipr WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		98271AE91A33C1EA00667B4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98271AEA1A33C1EA00667B4D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98271AF51A33C1EA00667B4D /* CoinFlipr Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				98271AF81A33C1EA00667B4D /* Interface.storyboard */,
+				98271AFA1A33C1EA00667B4D /* Images.xcassets */,
+				98271AF61A33C1EA00667B4D /* Supporting Files */,
+			);
+			path = "CoinFlipr Watch App";
+			sourceTree = "<group>";
+		};
+		98271AF61A33C1EA00667B4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98271AF71A33C1EA00667B4D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +226,12 @@
 				98271AB41A33C1C400667B4D /* Sources */,
 				98271AB51A33C1C400667B4D /* Frameworks */,
 				98271AB61A33C1C400667B4D /* Resources */,
+				98271B051A33C1EA00667B4D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				98271AFD1A33C1EA00667B4D /* PBXTargetDependency */,
 			);
 			name = CoinFlipr;
 			productName = CoinFlipr;
@@ -153,6 +256,39 @@
 			productReference = 98271AD01A33C1C400667B4D /* CoinFliprTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		98271AE31A33C1EA00667B4D /* CoinFlipr WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98271B021A33C1EA00667B4D /* Build configuration list for PBXNativeTarget "CoinFlipr WatchKit Extension" */;
+			buildPhases = (
+				98271AE01A33C1EA00667B4D /* Sources */,
+				98271AE11A33C1EA00667B4D /* Frameworks */,
+				98271AE21A33C1EA00667B4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98271AF41A33C1EA00667B4D /* PBXTargetDependency */,
+			);
+			name = "CoinFlipr WatchKit Extension";
+			productName = "CoinFlipr WatchKit Extension";
+			productReference = 98271AE41A33C1EA00667B4D /* CoinFlipr WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		98271AF01A33C1EA00667B4D /* CoinFlipr Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98271AFF1A33C1EA00667B4D /* Build configuration list for PBXNativeTarget "CoinFlipr Watch App" */;
+			buildPhases = (
+				98271AEF1A33C1EA00667B4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoinFlipr Watch App";
+			productName = "CoinFlipr Watch App";
+			productReference = 98271AF11A33C1EA00667B4D /* CoinFlipr Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +304,12 @@
 					98271ACF1A33C1C400667B4D = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 98271AB71A33C1C400667B4D;
+					};
+					98271AE31A33C1EA00667B4D = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					98271AF01A33C1EA00667B4D = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -186,6 +328,8 @@
 			targets = (
 				98271AB71A33C1C400667B4D /* CoinFlipr */,
 				98271ACF1A33C1C400667B4D /* CoinFliprTests */,
+				98271AE31A33C1EA00667B4D /* CoinFlipr WatchKit Extension */,
+				98271AF01A33C1EA00667B4D /* CoinFlipr Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +349,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98271AE21A33C1EA00667B4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98271AF21A33C1EA00667B4D /* CoinFlipr Watch App.app in Resources */,
+				98271AEE1A33C1EA00667B4D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98271AEF1A33C1EA00667B4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98271AF91A33C1EA00667B4D /* Interface.storyboard in Resources */,
+				98271AFB1A33C1EA00667B4D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +391,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98271AE01A33C1EA00667B4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98271AEC1A33C1EA00667B4D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +406,16 @@
 			isa = PBXTargetDependency;
 			target = 98271AB71A33C1C400667B4D /* CoinFlipr */;
 			targetProxy = 98271AD11A33C1C400667B4D /* PBXContainerItemProxy */;
+		};
+		98271AF41A33C1EA00667B4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98271AF01A33C1EA00667B4D /* CoinFlipr Watch App */;
+			targetProxy = 98271AF31A33C1EA00667B4D /* PBXContainerItemProxy */;
+		};
+		98271AFD1A33C1EA00667B4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98271AE31A33C1EA00667B4D /* CoinFlipr WatchKit Extension */;
+			targetProxy = 98271AFC1A33C1EA00667B4D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -340,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CoinFlipr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CoinFlipr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,6 +572,62 @@
 			};
 			name = Release;
 		};
+		98271B001A33C1EA00667B4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = CoinFlipr_WatchKit_Extension;
+				INFOPLIST_FILE = "CoinFlipr Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		98271B011A33C1EA00667B4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = CoinFlipr_WatchKit_Extension;
+				INFOPLIST_FILE = "CoinFlipr Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		98271B031A33C1EA00667B4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CoinFlipr WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		98271B041A33C1EA00667B4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CoinFlipr WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +653,22 @@
 			buildConfigurations = (
 				98271ADE1A33C1C400667B4D /* Debug */,
 				98271ADF1A33C1C400667B4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		98271AFF1A33C1EA00667B4D /* Build configuration list for PBXNativeTarget "CoinFlipr Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98271B001A33C1EA00667B4D /* Debug */,
+				98271B011A33C1EA00667B4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		98271B021A33C1EA00667B4D /* Build configuration list for PBXNativeTarget "CoinFlipr WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98271B031A33C1EA00667B4D /* Debug */,
+				98271B041A33C1EA00667B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

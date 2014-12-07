@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CoinFlipr_Watch_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="132" height="132" alignment="center" contentMode="scaleAspectFit" id="OQN-th-pHt"/>
+                        <group width="1" alignment="left" hasDetent="YES" id="ALA-Kl-Rt6">
+                            <items>
+                                <label alignment="center" text="Wrong" id="5gQ-TA-5G9"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" hasDetent="YES" id="wwO-VS-wde">
+                            <items>
+                                <button width="1" alignment="left" title="Flip" id="8bK-Ui-R5c">
+                                    <connections>
+                                        <action selector="onFlip" destination="AgC-eL-Hgc" id="IW2-jb-KC2"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" hasDetent="YES" id="PxY-ai-3DT">
+                            <items>
+                                <button width="0.50000000000000011" alignment="left" title="Heads" id="xxQ-NX-12w">
+                                    <connections>
+                                        <action selector="onHeads" destination="AgC-eL-Hgc" id="qeT-Mr-FuH"/>
+                                    </connections>
+                                </button>
+                                <button width="0.50000000000000011" alignment="left" title="Tails" id="Q75-yi-8IN">
+                                    <connections>
+                                        <action selector="onTails" destination="AgC-eL-Hgc" id="lHk-t4-vFH"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="coinImage" destination="OQN-th-pHt" id="1Ba-dv-tfb"/>
+                        <outlet property="flipGroup" destination="wwO-VS-wde" id="m2O-o5-Wtk"/>
+                        <outlet property="headsButton" destination="xxQ-NX-12w" id="DQd-d9-0Sa"/>
+                        <outlet property="headsGroup" destination="PxY-ai-3DT" id="KoE-n1-PAw"/>
+                        <outlet property="resultsGroup" destination="ALA-Kl-Rt6" id="ztu-If-7uQ"/>
+                        <outlet property="resultsLabel" destination="5gQ-TA-5G9" id="OVn-K6-ebW"/>
+                        <outlet property="tailsButton" destination="Q75-yi-8IN" id="yun-MY-C6c"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="305" y="428"/>
+        </scene>
+    </scenes>
+</document>
