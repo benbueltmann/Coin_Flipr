@@ -37,21 +37,34 @@ class InterfaceController: WKInterfaceController {
 
     }
     @IBAction func onHeads() {
-        coinImage.setImageNamed("tails")
         resultsGroup.setHidden(false)
-        resultsButton.setColor(UIColor.redColor())
-        resultsButton.setTitle("Wrong! It was tails!")
         headsGroup.setHidden(true)
-
+        var flip:UInt32 = arc4random_uniform(2);
+        if flip == 1 {
+            coinImage.setImageNamed("tails")
+            resultsButton.setColor(UIColor(red: 0.82, green: 0.11, blue: 0.06, alpha: 1.0))
+            resultsButton.setTitle("Wrong! It was tails!")
+        } else {
+            coinImage.setImageNamed("heads")
+            resultsButton.setColor(UIColor(red: 0.26, green: 0.8, blue: 0.0, alpha: 1.0))
+            resultsButton.setTitle("Right! It was heads!")
+        }
     }
 
     @IBAction func onTails() {
-        coinImage.setImageNamed("heads")
         resultsGroup.setHidden(false)
-        resultsButton.setColor(UIColor.redColor())
-        resultsButton.setTitle("Wrong! It was heads!")
         headsGroup.setHidden(true)
 
+        var flip:UInt32 = arc4random_uniform(2);
+        if flip == 1 {
+            coinImage.setImageNamed("heads")
+            resultsButton.setColor(UIColor(red: 0.82, green: 0.11, blue: 0.06, alpha: 1.0))
+            resultsButton.setTitle("Wrong! It was heads!")
+        } else {
+            coinImage.setImageNamed("tails")
+            resultsButton.setColor(UIColor(red: 0.26, green: 0.8, blue: 0.0, alpha: 1.0))
+            resultsButton.setTitle("Right! It was tails!")
+        }
     }
 
     override init(context: AnyObject?) {

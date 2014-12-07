@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CoinFlipr_Watch_App" customModuleProvider="target">
                     <items>
-                        <imageView width="132" height="132" alignment="center" contentMode="scaleAspectFit" id="OQN-th-pHt"/>
+                        <imageView width="133" height="132" alignment="center" contentMode="scaleAspectFit" id="OQN-th-pHt"/>
                         <group width="1" alignment="left" hasDetent="YES" id="ALA-Kl-Rt6">
                             <items>
                                 <button width="1" alignment="left" title="Button" id="vzL-b4-gJh">
