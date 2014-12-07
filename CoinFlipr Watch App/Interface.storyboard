@@ -13,7 +13,11 @@
                         <imageView width="132" height="132" alignment="center" contentMode="scaleAspectFit" id="OQN-th-pHt"/>
                         <group width="1" alignment="left" hasDetent="YES" id="ALA-Kl-Rt6">
                             <items>
-                                <label alignment="center" text="Wrong" id="5gQ-TA-5G9"/>
+                                <button width="1" alignment="left" title="Button" id="vzL-b4-gJh">
+                                    <connections>
+                                        <action selector="onResults" destination="AgC-eL-Hgc" id="zup-RE-VcJ"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                         <group width="1" alignment="left" hasDetent="YES" id="wwO-VS-wde">
@@ -45,8 +49,8 @@
                         <outlet property="flipGroup" destination="wwO-VS-wde" id="m2O-o5-Wtk"/>
                         <outlet property="headsButton" destination="xxQ-NX-12w" id="DQd-d9-0Sa"/>
                         <outlet property="headsGroup" destination="PxY-ai-3DT" id="KoE-n1-PAw"/>
+                        <outlet property="resultsButton" destination="vzL-b4-gJh" id="sSQ-wj-7ws"/>
                         <outlet property="resultsGroup" destination="ALA-Kl-Rt6" id="ztu-If-7uQ"/>
-                        <outlet property="resultsLabel" destination="5gQ-TA-5G9" id="OVn-K6-ebW"/>
                         <outlet property="tailsButton" destination="Q75-yi-8IN" id="yun-MY-C6c"/>
                     </connections>
                 </controller>

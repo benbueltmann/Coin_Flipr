@@ -19,7 +19,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var coinImage: WKInterfaceImage!
     @IBOutlet weak var headsGroup: WKInterfaceGroup!
     @IBOutlet weak var resultsGroup: WKInterfaceGroup!
-    @IBOutlet weak var resultsLabel: WKInterfaceLabel!
+    @IBOutlet weak var resultsButton: WKInterfaceButton!
     @IBAction func onFlip() {
 
         coinImage.setImageNamed("flip")
@@ -28,11 +28,19 @@ class InterfaceController: WKInterfaceController {
         headsGroup.setHidden(false)
     }
 
+
+    @IBAction func onResults() {
+        coinImage.setImageNamed("heads")
+        headsGroup.setHidden(true)
+        resultsGroup.setHidden(true)
+        flipGroup.setHidden(false)
+
+    }
     @IBAction func onHeads() {
         coinImage.setImageNamed("tails")
         resultsGroup.setHidden(false)
-        resultsLabel.setTextColor(UIColor.redColor())
-        resultsLabel.setText("Wrong, it was tails!")
+        resultsButton.setColor(UIColor.redColor())
+        resultsButton.setTitle("Wrong! It was tails!")
         headsGroup.setHidden(true)
 
     }
@@ -40,8 +48,8 @@ class InterfaceController: WKInterfaceController {
     @IBAction func onTails() {
         coinImage.setImageNamed("heads")
         resultsGroup.setHidden(false)
-        resultsLabel.setTextColor(UIColor.redColor())
-        resultsLabel.setText("Wrong, it was heads!")
+        resultsButton.setColor(UIColor.redColor())
+        resultsButton.setTitle("Wrong! It was heads!")
         headsGroup.setHidden(true)
 
     }
@@ -49,7 +57,6 @@ class InterfaceController: WKInterfaceController {
     override init(context: AnyObject?) {
         // Initialize variables here.
         super.init(context: context)
-        headsGroup.setHeight(0)
         coinImage.setImageNamed("heads")
         headsGroup.setHidden(true)
         resultsGroup.setHidden(true)
