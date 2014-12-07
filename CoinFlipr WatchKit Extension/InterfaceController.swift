@@ -23,7 +23,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func onFlip() {
 
         coinImage.setImageNamed("flip")
-        coinImage.startAnimatingWithImagesInRange(NSMakeRange(1, 30), duration: 0.7, repeatCount: 0)
+        coinImage.startAnimatingWithImagesInRange(NSMakeRange(1, 30), duration: 0.6, repeatCount: 0)
         flipGroup.setHidden(true)
         headsGroup.setHidden(false)
     }
@@ -39,7 +39,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func onHeads() {
         resultsGroup.setHidden(false)
         headsGroup.setHidden(true)
-        var flip:UInt32 = arc4random_uniform(2);
+        var flip:UInt32 = arc4random_uniform(2)
         if flip == 1 {
             coinImage.setImageNamed("tails")
             resultsButton.setColor(UIColor(red: 0.82, green: 0.11, blue: 0.06, alpha: 1.0))
