@@ -23,7 +23,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func onFlip() {
 
         coinImage.setImageNamed("flip")
-        coinImage.startAnimatingWithImagesInRange(NSMakeRange(1, 30), duration: 0.6, repeatCount: 0)
+        coinImage.startAnimatingWithImagesInRange(NSMakeRange(1, 30), duration: 0.2, repeatCount: 0)
         flipGroup.setHidden(true)
         headsGroup.setHidden(false)
     }
@@ -42,11 +42,11 @@ class InterfaceController: WKInterfaceController {
         var flip:UInt32 = arc4random_uniform(2)
         if flip == 1 {
             coinImage.setImageNamed("tails")
-            resultsButton.setColor(UIColor(red: 0.82, green: 0.11, blue: 0.06, alpha: 1.0))
+            resultsButton.setBackgroundColor(UIColor(red: 0.82, green: 0.11, blue: 0.06, alpha: 1.0))
             resultsButton.setTitle("Wrong! It was tails!")
         } else {
             coinImage.setImageNamed("heads")
-            resultsButton.setColor(UIColor(red: 0.26, green: 0.8, blue: 0.0, alpha: 1.0))
+            resultsButton.setBackgroundColor(UIColor(red: 0.26, green: 0.8, blue: 0.0, alpha: 1.0))
             resultsButton.setTitle("Right! It was heads!")
         }
     }
@@ -58,18 +58,19 @@ class InterfaceController: WKInterfaceController {
         var flip:UInt32 = arc4random_uniform(2);
         if flip == 1 {
             coinImage.setImageNamed("heads")
-            resultsButton.setColor(UIColor(red: 0.82, green: 0.11, blue: 0.06, alpha: 1.0))
+            resultsButton.setBackgroundColor(UIColor(red: 0.82, green: 0.11, blue: 0.06, alpha: 1.0))
             resultsButton.setTitle("Wrong! It was heads!")
         } else {
             coinImage.setImageNamed("tails")
-            resultsButton.setColor(UIColor(red: 0.26, green: 0.8, blue: 0.0, alpha: 1.0))
+            resultsButton.setBackgroundColor(UIColor(red: 0.26, green: 0.8, blue: 0.0, alpha: 1.0))
             resultsButton.setTitle("Right! It was tails!")
         }
     }
 
-    override init(context: AnyObject?) {
+    required init(context: AnyObject?) {
         // Initialize variables here.
-        super.init(context: context)
+//        super.init(context: context)
+        super.init()
         coinImage.setImageNamed("heads")
         headsGroup.setHidden(true)
         resultsGroup.setHidden(true)
