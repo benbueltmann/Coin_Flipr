@@ -39,7 +39,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func onHeads() {
         coinImage.setImageNamed("tails")
         resultsGroup.setHidden(false)
-        resultsButton.setColor(UIColor.redColor())
+        resultsButton.setBackgroundColor(UIColor.redColor())
         resultsButton.setTitle("Wrong! It was tails!")
         headsGroup.setHidden(true)
 
@@ -48,15 +48,15 @@ class InterfaceController: WKInterfaceController {
     @IBAction func onTails() {
         coinImage.setImageNamed("heads")
         resultsGroup.setHidden(false)
-        resultsButton.setColor(UIColor.redColor())
+        resultsButton.setBackgroundColor(UIColor.redColor())
         resultsButton.setTitle("Wrong! It was heads!")
         headsGroup.setHidden(true)
 
     }
 
-    override init(context: AnyObject?) {
+    required init(context: AnyObject?) {
         // Initialize variables here.
-        super.init(context: context)
+        super.init()
         coinImage.setImageNamed("heads")
         headsGroup.setHidden(true)
         resultsGroup.setHidden(true)
