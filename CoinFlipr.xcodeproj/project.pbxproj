@@ -11,7 +11,6 @@
 		98271AC11A33C1C400667B4D /* CoinFlipr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98271ABF1A33C1C400667B4D /* CoinFlipr.xcdatamodeld */; };
 		98271AC31A33C1C400667B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98271AC21A33C1C400667B4D /* ViewController.swift */; };
 		98271AC61A33C1C400667B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98271AC41A33C1C400667B4D /* Main.storyboard */; };
-		98271AC81A33C1C400667B4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98271AC71A33C1C400667B4D /* Images.xcassets */; };
 		98271ACB1A33C1C400667B4D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98271AC91A33C1C400667B4D /* LaunchScreen.xib */; };
 		98271AD71A33C1C400667B4D /* CoinFliprTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98271AD61A33C1C400667B4D /* CoinFliprTests.swift */; };
 		98271AE71A33C1EA00667B4D /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98271AE61A33C1EA00667B4D /* WatchKit.framework */; };
@@ -21,6 +20,7 @@
 		98271AF91A33C1EA00667B4D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98271AF81A33C1EA00667B4D /* Interface.storyboard */; };
 		98271AFB1A33C1EA00667B4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98271AFA1A33C1EA00667B4D /* Images.xcassets */; };
 		98271AFE1A33C1EA00667B4D /* CoinFlipr WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 98271AE41A33C1EA00667B4D /* CoinFlipr WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		98603FD41B3B4F8000AFC34F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98603FD31B3B4F8000AFC34F /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,6 @@
 		98271AC01A33C1C400667B4D /* CoinFlipr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoinFlipr.xcdatamodel; sourceTree = "<group>"; };
 		98271AC21A33C1C400667B4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98271AC51A33C1C400667B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		98271AC71A33C1C400667B4D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		98271ACA1A33C1C400667B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		98271AD01A33C1C400667B4D /* CoinFliprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinFliprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98271AD51A33C1C400667B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +81,7 @@
 		98271AF71A33C1EA00667B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98271AF81A33C1EA00667B4D /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		98271AFA1A33C1EA00667B4D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		98603FD31B3B4F8000AFC34F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "CoinFlipr Watch App/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +139,9 @@
 				98271ABD1A33C1C400667B4D /* AppDelegate.swift */,
 				98271AC21A33C1C400667B4D /* ViewController.swift */,
 				98271AC41A33C1C400667B4D /* Main.storyboard */,
-				98271AC71A33C1C400667B4D /* Images.xcassets */,
 				98271AC91A33C1C400667B4D /* LaunchScreen.xib */,
 				98271ABF1A33C1C400667B4D /* CoinFlipr.xcdatamodeld */,
+				98603FD31B3B4F8000AFC34F /* Images.xcassets */,
 				98271ABB1A33C1C400667B4D /* Supporting Files */,
 			);
 			path = CoinFlipr;
@@ -339,9 +339,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98603FD41B3B4F8000AFC34F /* Images.xcassets in Resources */,
 				98271AC61A33C1C400667B4D /* Main.storyboard in Resources */,
 				98271ACB1A33C1C400667B4D /* LaunchScreen.xib in Resources */,
-				98271AC81A33C1C400667B4D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +647,7 @@
 				98271ADC1A33C1C400667B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98271ADD1A33C1C400667B4D /* Build configuration list for PBXNativeTarget "CoinFliprTests" */ = {
 			isa = XCConfigurationList;
@@ -655,6 +656,7 @@
 				98271ADF1A33C1C400667B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98271AFF1A33C1EA00667B4D /* Build configuration list for PBXNativeTarget "CoinFlipr Watch App" */ = {
 			isa = XCConfigurationList;
@@ -663,6 +665,7 @@
 				98271B011A33C1EA00667B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98271B021A33C1EA00667B4D /* Build configuration list for PBXNativeTarget "CoinFlipr WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -671,6 +674,7 @@
 				98271B041A33C1EA00667B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
